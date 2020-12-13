@@ -48,12 +48,10 @@ bzl_library(
     name = "actions",
     srcs = [
         "actions.bzl",
-        "@io_bazel_rules_go//go:all_rules",
+        "//wire/private/skylib/lib:versions",
+        "@io_bazel_rules_go//go:def",
     ],
     visibility = ["//wire:__subpackages__"],
-    deps = [
-        "@bazel_skylib//lib:versions.bzl",
-    ],
 )
 
 bzl_library(

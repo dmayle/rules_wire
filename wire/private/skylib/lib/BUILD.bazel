@@ -16,5 +16,8 @@ filegroup(
 filegroup(
     name = "versions",
     srcs = ["versions.bzl"],
-    visibility = ["//wire:__subpackages__"],
+    visibility = [
+        "//wire:__subpackages__",
+        "//wire/private:__subpackages__",
+    ],
 )

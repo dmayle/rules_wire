@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-load("@bazel_skylib//lib:versions.bzl", "versions")
+load("//wire/private/skylib/lib:versions.bzl", "versions")
 load("@io_bazel_rules_go//go:def.bzl", "GoSource")
 
 def wire_compile(ctx, package_dir, config_path_depth, srcs, deps, out):
